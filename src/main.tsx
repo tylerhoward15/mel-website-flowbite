@@ -6,6 +6,7 @@ import CustomHero from './Hero.tsx'
 import CustomAboutMe from './AboutMe.tsx'
 import CustomCredits from './Credits.tsx'
 import CustomGallery from './Gallery.tsx'
+import CustomFooter from './Footer.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -14,5 +15,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <CustomAboutMe />
     <CustomCredits />
     <CustomGallery />
+    <CustomFooter />
   </React.StrictMode>
 )
