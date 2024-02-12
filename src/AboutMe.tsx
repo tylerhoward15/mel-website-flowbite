@@ -1,21 +1,27 @@
 import { Button } from 'flowbite-react'
+import singingGirl from './assets/singing-girl.svg'
+import bigPic from './assets/photoshoot-pics/MelodyHollis-107.png'
+import rectanglePic from './assets/photoshoot-pics/MelodyHollis-008.png'
+import squarePic from './assets/photoshoot-pics/MelodyHollis-206.png'
 
 function CustomAboutMe() {
   return (
     <div className="fle flex-col">
-      <img src="/vite.svg" alt="Singing girl svg" />
+      <img className="max-w-xs" src={singingGirl} alt="Singing girl svg" />
       <h1>An entertainer from birth and a performer by career.</h1>
       <Button pill outline>
         About Me
       </Button>
-      <div className="grid grid-rows-4 grid-flow-col gap-4">
-        <img className="row-span-4 col-span-2" src="/vite.svg" alt="Mel pic" />
-        <img className="col-span-2" src="/vite.svg" alt="Mel pic 2" />
+      <div className="flex flex-row">
         <img
-          className="row-span-2 col-span-2"
-          src="/vite.svg"
-          alt="Mel pic 3"
+          className="basis-1/2 max-w-[50%] m-auto"
+          src={bigPic}
+          alt="bigPic"
         />
+        <div className="basis-1/2 max-w-[50%]">
+          <img className="" src={rectanglePic} alt="rectanglePic" />
+          <img className="" src={squarePic} alt="squarePic" />
+        </div>
       </div>
     </div>
   )
