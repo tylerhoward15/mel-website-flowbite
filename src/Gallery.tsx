@@ -16,7 +16,7 @@ function CustomGallery() {
       <h1 className="text-3xl text-center">Gallery</h1>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-        {galleryImages.map((image) => (
+        {galleryImages.slice(0, 6).map((image) => (
           <img
             className="h-auto max-w-full rounded-lg"
             src={image}
