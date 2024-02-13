@@ -12,8 +12,8 @@ const galleryImages: string[] = Object.values(modules) as string[]
 
 function CustomGallery() {
   return (
-    <div className="flex flex-col">
-      <h1 className="text-center">Gallery</h1>
+    <div className="flex flex-col m-5">
+      <h2 className="text-center underline m-5">Gallery</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
         {galleryImages.slice(0, 6).map((image) => (
@@ -25,7 +25,9 @@ function CustomGallery() {
           />
         ))}
       </div>
-      <Button>See More</Button>
+      <Button outline gradientDuoTone="purpleToPink" className="m-5">
+        See More
+      </Button>
     </div>
   )
 }

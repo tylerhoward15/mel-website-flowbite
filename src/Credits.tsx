@@ -10,8 +10,8 @@ const posters: string[] = Object.values(modules) as string[]
 
 function CustomCredits() {
   return (
-    <div className="flex flex-col">
-      <h1 className="text-center">Featured Credits</h1>
+    <div className="flex flex-col m-5">
+      <h2 className="text-center underline m-5">Featured Credits</h2>
       <div className="grid grid-cols-2 gap-2">
         {posters.map((poster) => {
           return (
@@ -21,7 +21,9 @@ function CustomCredits() {
           )
         })}
       </div>
-      <Button>Full Resume</Button>
+      <Button outline gradientDuoTone="purpleToPink" className="m-5">
+        Full Resume
+      </Button>
     </div>
   )
 }

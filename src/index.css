@@ -9,5 +9,6 @@
   h2 {
     @apply text-6xl;
     font-size: calc(1.475rem + 2.7vw);
+    font-weight: bold;
   }
 }
