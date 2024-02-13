@@ -15,30 +15,26 @@ function CustomCredits() {
       <img className="" src={starsWarning} alt="" />
       <h2 className="text-center underline m-5">Featured Credits</h2>
 
-      <div className="grid grid-cols-2 gap-5 md:gap-10 bg-slate-200 p-5 md:p-10 rounded-xl">
-        <p className="col-span-2">
-          Monotonectally build quality human capital with turnkey channels.
-          Professionally productivate intuitive services before market
-          positioning intellectual capital.
-        </p>
-        <Button
-          outline
-          gradientDuoTone="purpleToPink"
-          className="col-span-2 m-5"
-        >
-          Full Resume
-        </Button>
-        {posters.map((poster) => {
-          return (
-            <div key={poster}>
-              <img
-                className="h-auto max-w-full shadow-2xl"
-                src={poster}
-                alt=""
-              />
-            </div>
-          )
-        })}
+      <div className="grid grid-cols-2 md:grid-cols-3 bg-slate-200 p-5 rounded-xl m-5 ">
+        <div className="col-span-2 md:col-span-1 md:row-span-2">
+          <p className="">
+            Monotonectally build quality human capital with turnkey channels.
+            Professionally productivate intuitive services before market
+            positioning intellectual capital.
+          </p>
+          <Button outline gradientDuoTone="purpleToPink" className="m-5">
+            Full Resume
+          </Button>
+        </div>
+        <div className="grid col-span-2 grid-cols-2 gap-5 md:col-start-2 max-h-[80vh] overflow-y-scroll">
+          {posters.map((poster) => {
+            return (
+              <div key={poster}>
+                <img className="shadow-2xl" src={poster} alt="" />
+              </div>
+            )
+          })}
+        </div>
       </div>
     </div>
   )
