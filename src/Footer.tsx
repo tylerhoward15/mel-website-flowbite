@@ -13,7 +13,7 @@ function CustomFooter() {
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
-            <h3 className="text-white">
+            <h3 className="text-white mb-10 text-left">
               Email Me: melodyholliscontact@gmail.com
             </h3>
           </div>
