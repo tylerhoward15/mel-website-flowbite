@@ -9,7 +9,7 @@ import {
 
 function CustomFooter() {
   return (
-    <Footer id="contact" container className="rounded-none">
+    <Footer id="contact" container className="rounded-none pt-16">
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>

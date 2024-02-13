@@ -11,7 +11,7 @@ function CustomAboutMe() {
   const [openModal, setOpenModal] = useState(false)
 
   return (
-    <div id="about" className="flex flex-col items-center m-5">
+    <div id="about" className="flex flex-col items-center m-5 pt-16">
       <img className="max-w-xs" src={singingGirl} alt="Singing girl svg" />
       <img src={starsWarning} alt="" />
       <h2 className="m-5">

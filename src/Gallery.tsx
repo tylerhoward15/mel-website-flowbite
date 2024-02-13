@@ -18,7 +18,7 @@ const galleryImages = [
 
 function CustomGallery() {
   return (
-    <div id="gallery" className="flex flex-col m-5 items-center">
+    <div id="gallery" className="flex flex-col m-5 items-center pt-16">
       <img src={starsWarning} alt="" />
       <h2 className="text-center underline m-5">Gallery</h2>
 
