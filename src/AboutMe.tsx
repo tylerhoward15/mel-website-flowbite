@@ -6,7 +6,7 @@ import squarePic from './assets/photoshoot-pics/MelodyHollis-206.png'
 
 function CustomAboutMe() {
   return (
-    <div className="fle flex-col">
+    <div className="flex flex-col items-center">
       <img className="max-w-xs" src={singingGirl} alt="Singing girl svg" />
       <h1>An entertainer from birth and a performer by career.</h1>
       <Button pill outline>
