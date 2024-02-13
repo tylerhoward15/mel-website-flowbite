@@ -29,7 +29,7 @@ function CustomHero() {
         </div>
       </div>
       <img
-        className="z-50 row-span-2 relative"
+        className="row-span-2 relative"
         src={melHero}
         alt="Main picture of Melody"
       />

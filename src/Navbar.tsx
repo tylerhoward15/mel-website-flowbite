@@ -2,7 +2,7 @@ import { DarkThemeToggle, Navbar } from 'flowbite-react'
 
 function CustomNavbar() {
   return (
-    <Navbar fluid>
+    <Navbar fluid className="sticky top-0 z-10">
       <Navbar.Brand href="./index.html">
         <img
           src="/vite.svg"
