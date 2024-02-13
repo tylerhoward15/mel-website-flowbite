@@ -1,4 +1,4 @@
-import { Navbar } from 'flowbite-react'
+import { DarkThemeToggle, Navbar } from 'flowbite-react'
 
 function CustomNavbar() {
   return (
@@ -23,6 +23,7 @@ function CustomNavbar() {
         <Navbar.Link href="#">Gallery</Navbar.Link>
         <Navbar.Link href="#">Contact</Navbar.Link>
         <Navbar.Link href="#">Resume</Navbar.Link>
+        <DarkThemeToggle />
       </Navbar.Collapse>
     </Navbar>
   )
