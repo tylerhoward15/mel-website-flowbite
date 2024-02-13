@@ -16,7 +16,11 @@ function CustomCredits() {
         {posters.map((poster) => {
           return (
             <div key={poster}>
-              <img className="h-auto max-w-full" src={poster} alt="" />
+              <img
+                className="h-auto max-w-full shadow-2xl"
+                src={poster}
+                alt=""
+              />
             </div>
           )
         })}

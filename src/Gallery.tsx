@@ -18,7 +18,7 @@ function CustomGallery() {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
         {galleryImages.slice(0, 6).map((image) => (
           <img
-            className="h-auto max-w-full rounded-lg"
+            className="h-auto max-w-full rounded-lg shadow-2xl"
             src={image}
             alt=""
             key={image}
