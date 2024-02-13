@@ -22,7 +22,13 @@ function CustomCredits() {
             Professionally productivate intuitive services before market
             positioning intellectual capital.
           </p>
-          <Button outline gradientDuoTone="purpleToPink" className="m-5">
+          <Button
+            outline
+            gradientDuoTone="purpleToPink"
+            className="m-5"
+            href="/Melody-Hollis-Resume.pdf"
+            target="_blank"
+          >
             Full Resume
           </Button>
         </div>

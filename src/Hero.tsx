@@ -11,7 +11,12 @@ function CustomHero() {
       <div className="md:p-10">
         <h2 className="text-[#f8f9fa]">Melody Hollis</h2>
         <h2 className="text-[#212529]">Actor, Singer, Dancer</h2>
-        <Button outline gradientDuoTone="purpleToPink" className="my-3">
+        <Button
+          outline
+          gradientDuoTone="purpleToPink"
+          className="my-3"
+          href="#contact"
+        >
           Let's Talk
           <HiOutlineArrowRight className="ml-2 h-5 w-5" />
         </Button>

@@ -31,7 +31,12 @@ function CustomGallery() {
             key={image}
           />
         ))}
-        <Button outline gradientDuoTone="purpleToPink" className="">
+        <Button
+          outline
+          gradientDuoTone="purpleToPink"
+          className=""
+          href="#contact"
+        >
           See More
         </Button>
       </div>
