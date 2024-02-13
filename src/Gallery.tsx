@@ -1,4 +1,5 @@
 import { Button } from 'flowbite-react'
+import starsWarning from './assets/stars-warning.svg'
 const modules = import.meta.glob(['./assets/photoshoot-pics/*.{jpg,png}'], {
   eager: true,
   query: '?url',
@@ -9,7 +10,8 @@ const galleryImages: string[] = Object.values(modules) as string[]
 
 function CustomGallery() {
   return (
-    <div className="flex flex-col m-5">
+    <div className="flex flex-col m-5 items-center">
+      <img src={starsWarning} alt="" />
       <h2 className="text-center underline m-5">Gallery</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2">

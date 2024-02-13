@@ -1,4 +1,5 @@
 import { Button } from 'flowbite-react'
+import starsWarning from './assets/stars-warning.svg'
 
 const modules = import.meta.glob(['./assets/posters/*.{jpg,png}'], {
   eager: true,
@@ -10,7 +11,8 @@ const posters: string[] = Object.values(modules) as string[]
 
 function CustomCredits() {
   return (
-    <div className="flex flex-col m-5">
+    <div className="flex flex-col m-5 items-center">
+      <img className="" src={starsWarning} alt="" />
       <h2 className="text-center underline m-5">Featured Credits</h2>
       <div className="grid grid-cols-2 gap-2">
         {posters.map((poster) => {
