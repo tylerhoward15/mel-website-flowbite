@@ -23,7 +23,9 @@ function CustomNavbar() {
         <Navbar.Link href="#">Gallery</Navbar.Link>
         <Navbar.Link href="#">Contact</Navbar.Link>
         <Navbar.Link href="#">Resume</Navbar.Link>
-        <DarkThemeToggle />
+        <Navbar.Link href="#">
+          <DarkThemeToggle className="p-0" />
+        </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   )
