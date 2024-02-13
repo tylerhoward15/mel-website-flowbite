@@ -15,16 +15,30 @@ function CustomNavbar() {
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Navbar.Link href="#" active>
+        <Navbar.Link href="#" active className="text-xl">
           Home
         </Navbar.Link>
-        <Navbar.Link href="#">About</Navbar.Link>
-        <Navbar.Link href="#">Credits</Navbar.Link>
-        <Navbar.Link href="#">Gallery</Navbar.Link>
-        <Navbar.Link href="#">Contact</Navbar.Link>
-        <Navbar.Link href="#">Resume</Navbar.Link>
+        <Navbar.Link href="#about" className="text-xl">
+          About
+        </Navbar.Link>
+        <Navbar.Link href="#credits" className="text-xl">
+          Credits
+        </Navbar.Link>
+        <Navbar.Link href="#gallery" className="text-xl">
+          Gallery
+        </Navbar.Link>
+        <Navbar.Link href="#contact" className="text-xl">
+          Contact
+        </Navbar.Link>
+        <Navbar.Link
+          href="/Melody-Hollis-Resume.pdf"
+          target="_blank"
+          className="text-xl"
+        >
+          Resume
+        </Navbar.Link>
         <Navbar.Link href="#">
-          <DarkThemeToggle className="p-0" />
+          <DarkThemeToggle className="p-1" />
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>

@@ -8,7 +8,7 @@ import { HiOutlineArrowRight } from 'react-icons/hi'
 
 function CustomAboutMe() {
   return (
-    <div className="flex flex-col items-center m-5">
+    <div id="about" className="flex flex-col items-center m-5">
       <img className="max-w-xs" src={singingGirl} alt="Singing girl svg" />
       <img src={starsWarning} alt="" />
       <h2 className="m-5">

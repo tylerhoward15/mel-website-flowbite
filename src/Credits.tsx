@@ -11,7 +11,7 @@ const posters: string[] = Object.values(modules) as string[]
 
 function CustomCredits() {
   return (
-    <div className="flex flex-col m-5 items-center">
+    <div id="credits" className="flex flex-col m-5 items-center">
       <img className="" src={starsWarning} alt="" />
       <h2 className="text-center underline m-5">Featured Credits</h2>
 
