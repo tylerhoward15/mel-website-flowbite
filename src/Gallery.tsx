@@ -1,4 +1,5 @@
-import { Button } from 'flowbite-react'
+import { Button, Modal } from 'flowbite-react'
+import { useState } from 'react'
 import starsWarning from './assets/stars-warning.svg'
 import fiveThreeNine from './assets/photoshoot-pics/MelodyHollis-539.jpg'
 import sixSevenNine from './assets/photoshoot-pics/MelodyHollis-679.jpg'
@@ -17,6 +18,8 @@ const galleryImages = [
 ]
 
 function CustomGallery() {
+  const [openModal, setOpenModal] = useState(false)
+
   return (
     <div id="gallery" className="flex flex-col m-5 items-center pt-16">
       <img src={starsWarning} alt="" />
@@ -35,10 +38,21 @@ function CustomGallery() {
           outline
           gradientDuoTone="purpleToPink"
           className=""
-          href="#contact"
+          onClick={() => setOpenModal(true)}
         >
           See More
         </Button>
+        <Modal
+          size={'7xl'}
+          dismissible
+          show={openModal}
+          onClose={() => setOpenModal(false)}
+        >
+          <Modal.Header className="">
+            <img className="inline mr-5" src={starsWarning} alt="" />
+            Coming Soon!
+          </Modal.Header>
+        </Modal>
       </div>
     </div>
   )
