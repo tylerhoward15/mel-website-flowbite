@@ -1,6 +1,6 @@
 import { Button } from 'flowbite-react'
 
-const modules = await import.meta.glob(['./assets/posters/*.{jpg,png}'], {
+const modules = import.meta.glob(['./assets/posters/*.{jpg,png}'], {
   eager: true,
   query: '?url',
   import: 'default',

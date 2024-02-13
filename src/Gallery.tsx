@@ -1,12 +1,9 @@
 import { Button } from 'flowbite-react'
-const modules = await import.meta.glob(
-  ['./assets/photoshoot-pics/*.{jpg,png}'],
-  {
-    eager: true,
-    query: '?url',
-    import: 'default',
-  }
-)
+const modules = import.meta.glob(['./assets/photoshoot-pics/*.{jpg,png}'], {
+  eager: true,
+  query: '?url',
+  import: 'default',
+})
 
 const galleryImages: string[] = Object.values(modules) as string[]
 
